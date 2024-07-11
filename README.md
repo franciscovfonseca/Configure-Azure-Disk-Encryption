@@ -32,58 +32,50 @@ You are a Security Engineer for an organization that needs you to enable **Azure
 <br>
 
 On the Azure portal home page, select **Virtual machines**, and then select **+ Create**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
 Select **Azure virtual machine**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/c09db8dc-a7ac-4ba5-9008-47c752f0a9bb" height="100%" width="100%" alt="9"/><br />
+<br>
+
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/8dec1459-c811-4957-a229-11219200669e" height="50%" width="50%" alt="9"/><br />
 <br>
 
 On the Create a virtual machine blade, on the Basics page, in Resource group, select **corp-datalod42311660**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
-In Virtual machine name, enter webVM1, and then in Image, select **Windows Server 2019 Datacenter - x64 Gen2**.
+In Virtual machine name, enter ***🆃 webVM1***, and then in Image, select **Windows Server 2019 Datacenter - x64 Gen2**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/22ec1eb9-1bf0-4d11-a145-1b987aecfaca" height="80%" width="80%" alt="9"/><br />
 <br>
 
 In Size, select **See all sizes**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
 On the Select a VM size page, in VM Size, select ***🆃 B2ms***, and then select **Select**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
-On the Basics page, in Username, enter ***🆃 AzureAdmin, and then in Password and Confirm password, enter ***🆃 Az!42311660!***.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+On the Basics page, in Username, enter ***🆃 AzureAdmin***, and then in Password and Confirm password, enter ***🆃 Az!42311660!***.
 <br>
 
 In Public inbound ports, ensure that **Allow selected ports** is selected, and then in Select inbound ports, ensure that **RDP (3389)** is selected.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ce2d807e-2d6c-4310-946e-6cec5773420c" height="80%" width="80%" alt="9"/><br />
 <br>
 
 On the Disks page, in OS disk type, select **Standard HDD**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/cd19298e-5a03-46d8-9f72-2768e56c71c6" height="80%" width="80%" alt="9"/><br />
 <br>
 
 On the Monitoring page, in Boot diagnostics, select **Disable**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
 Select **Review + create**, review the virtual machine specifications, and then select **Create** to deploy the virtual machine.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/75b36a49-ed33-4bbc-8ca8-f5e966b4627f" height="80%" width="80%" alt="9"/><br />
 <br>
 
 <br>
@@ -93,36 +85,35 @@ Select **Review + create**, review the virtual machine specifications, and then 
 
 On the Azure portal home page, select **Virtual machines**, and then select **webVM1**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/d80bf6ad-7357-46be-ab36-eef86f52696e" height="90%" width="90%" alt="9"/><br />
 <br>
 
 On the webVM1 resource menu, in Settings, select **Disks**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/65734f1d-86ec-4378-bff8-a089e885345b" height="50%" width="50%" alt="9"/><br />
 <br>
 
 On the Disks page, in OS disk, verify that there is one disk, and then in the Encryption column, verify that the value is set to **SSE with PMK**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
 <br>
 
 In Data disk, verify that there are no data disks.The current disk specifications in the Azure portal
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/5b9a2405-7215-4592-95f3-363c871949ef" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ebe999db-a36f-4046-b063-1f649e2b2aa7" height="100%" width="100%" alt="9"/><br />
 <br>
 
+<br>
 
   <details close> 
   
 **<summary> 💡 Note</summary>**
 
- - **Server-side encryption** (SSE) of Azure Disk Storage is enabled by default and encrypts disks at the storage server level by using a platform-managed key (PMK).
+ - **Server-Side Encryption (SSE)** of Azure Disk Storage is enabled by default and encrypts disks at the storage server level by using a Platform-Managed key (PMK).
 
  - The encryption key is managed automatically by the platform, in this case Azure, including protection and regular rotation.
  
- - You can use server-side encryption with a customer-managed key (SSE with CMK) to manage the encryption key manually for compliance reasons.
+ - You can use Server-Side Encryption with a customer-managed key (SSE with CMK) to manage the encryption key manually for compliance reasons.
  
- - You can combine SSE with Azure Disk Encryption (ADE), which additionally encrypts the disk at the OS level by using technologies such as BitLocker (Windows) or DM-Crypt (Linux), for what is called double encryption at rest high security requirements 
+ - You can combine SSE with Azure Disk Encryption (ADE), which additionally encrypts the disk at the OS level by using technologies such as BitLocker (Windows) or DM-Crypt (Linux), for what is called ***double encryption at rest*** high security requirements. 
 
   </details>
 
