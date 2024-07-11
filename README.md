@@ -27,7 +27,7 @@ You are a Security Engineer for an organization that needs you to enable **Azure
 <br>
 
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/01f390c9-cd83-447f-bb40-6c76a64dfa06" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/e4c292b2-4372-4674-bdd6-83d7a9e80616" height="70%" width="70%" alt="9"/><br />
 
 <br>
 <br>
@@ -254,16 +254,16 @@ On the Azure portal menu, select **Create a resource** to display the Azure Mark
 
 In Search services and marketplace, search for and select ***Key Vault***, and then select **Create**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/a429bc25-2d64-4fa5-ac47-60affaadde1b" height="100%" width="100%" alt="9"/><br />
 <br>
 
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/f2bbfff6-7c72-438e-8930-2756e4a0dd0a" height="60%" width="60%" alt="9"/><br />
 <br>
 
 On the Create key vault blade, in Resource group, select **corp-datalod42311660**, in Key vault name, enter ***🆃 KV42311660***, in Pricing tier, ensure that **Standard** is selected, and then select **Next**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/701415da-3421-4e1f-afe4-811210a17114" height="80%" width="80%" alt="9"/><br />
 <br>
 
 On the Access configuration page, select the **Azure Disk Encryption for volume encryption** check box.
@@ -272,7 +272,7 @@ On the Access configuration page, select the **Azure Disk Encryption for volume 
 
 Select **Review + create**, review the specifications for the key vault, and then select **Create**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/204f6c0b-a71e-473a-87a7-5ed2a8774655" height="50%" width="50%" alt="9"/><br />
 <br>
 
 
@@ -285,22 +285,22 @@ Select **Review + create**, review the specifications for the key vault, and the
 
 On the Azure portal page header, in the global controls section, select the **Cloud Shell** icon.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/d7080781-aaf1-4f15-be3b-d3a568622e68" height="100%" width="100%" alt="9"/><br />
 <br>
   
 On the Welcome to Azure Cloud Shell page, select **PowerShell**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/d41f9000-5ed3-400b-9f85-9ed941573836" height="90%" width="90%" alt="9"/><br />
 <br>
 
 On the **Getting started** page, select **Mount storage account**, and then click on **Apply**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/1e81af84-3b16-4d63-a016-9fad2d7a4422" height="90%" width="90%" alt="9"/><br />
 <br>
 
 On the **Mount storage account** page, select **I want to create a storage account**, and then click on **Next**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/6093c333-070e-4aca-a370-b42b98e3168e" height="90%" width="90%" alt="9"/><br />
 <br>
 
 Now for the **Create storage account** step:
@@ -309,7 +309,7 @@ Now for the **Create storage account** step:
 - In File share, enter ***🆃 cloudshell***.
 - Select **Create**, and then wait for the Cloud Shell session to initialize.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/646efa7d-ae94-47e2-b4b4-5b6f62a8cb2c" height="90%" width="90%" alt="9"/><br />
 <br>
 
 
@@ -332,7 +332,7 @@ $KeyVault = Get-AzKeyVault -VaultName KV42311660 -ResourceGroupName corp-datalod
 ```
 <br>
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/9a07086f-aee1-444d-9495-e9422c2c3471" height="100%" width="100%" alt="9"/><br />
 <br>
   
 <br>
@@ -354,16 +354,19 @@ Set-AzVMDiskEncryptionExtension -ResourceGroupName corp-datalod42311660 -VMName 
 ```
 <br>
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/880c5bdc-a129-499c-b7c2-1827ff5f76c8" height="100%" width="100%" alt="9"/><br />
 <br>
 
 - If prompted to continue, enter ***Y***
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/4d18145f-0206-4050-91f0-1fc2787471c4" height="100%" width="100%" alt="9"/><br />
 <br>
 
 ⚠️ The command will take approximately 2–3 minutes to complete.
 
+<br>
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ee89dddc-fba0-4224-b4cc-199f01dfb152" height="100%" width="100%" alt="9"/><br />
 <br>
 
 <h2></h2>
@@ -385,7 +388,7 @@ Get-AzVmDiskEncryptionStatus -VMName webVM1 -ResourceGroupName corp-datalod42311
 
 The encryption for both the OS and data disks should be verified.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/b2bf2895-a41c-46fc-ba05-52a3b8795b38" height="100%" width="100%" alt="9"/><br />
 <br>
 
 Close the **Cloud Shell** window.
@@ -403,7 +406,7 @@ In the Azure portal, we need to verify that the updated disk specifications use 
 
 On the Azure portal home page, select **Virtual machines**, and then select **webVM1**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/051ab1b5-86f4-45ea-8e84-f379f7c16f37" height="100%" width="100%" alt="9"/><br />
 <br>
 
 On the webVM1 resource menu, in Settings, select **Disks**.
@@ -412,11 +415,27 @@ On the webVM1 resource menu, in Settings, select **Disks**.
 
 On the Disks page, verify that there is now an OS disk and a data disk that both use **SSE with PMK & ADE** encryption.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/af608269-0074-494d-bba1-9a0e57a58ea8" height="100%" width="100%" alt="9"/><br />
+
 <br>
 
+<br>
 
+<h2>Summary</h2>
 
+<br>
+
+✅ Congratulations, we have completed the **Configure Azure Disk Encryption Lab**.
+
+<br>
+
+We have accomplished the following:
+
+- **Created an Azure Virtual Machine**.
+
+- **Added a New Data Disk to the Azure Virtual Machine**.
+
+- **Enabled Azure Disk Encryption**.
 
 <br>
 <br>
