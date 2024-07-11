@@ -248,94 +248,180 @@ Then close the **Remote Desktop Connection** window.
 <h2>3️⃣ Enable Azure Disk Encryption</h2>
 <br>
 
+On the Azure portal menu, select **Create a resource** to display the Azure Marketplace.
 
-On the Azure portal menu, select Create a resource to display the Azure Marketplace.
-In Search services and marketplace, search for and select Key Vault, and then select Create.The Create Key Vault page
-On the Create key vault blade, in Resource group, select corp-datalod42311660, in Key vault name, enter KV42311660, in Pricing tier, ensure that Standard is selected, and then select Next.
-On the Access configuration page, select the Azure Disk Encryption for volume encryption check box.The Azure Disk Encryption for volume encryption check box
-Select Review + create, review the specifications for the key vault, and then select Create.
+<br>
 
-
-
-
-On the Azure portal home page, in the Search bar, search for and select webVNET to display the ***webVNET*** virtual network page.
+In Search services and marketplace, search for and select ***🆃 Key Vault***, and then select **Create**.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-On the webVNET resource menu, in Settings, select **Peerings**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/d963ab25-143b-4ed2-973b-dab7bfe2c1ac" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-Then on the command bar, select **Add** to add a peering connection between the virtual networks.
+On the Create key vault blade, in Resource group, select **corp-datalod42311660**, in Key vault name, enter ***🆃 KV42311660***, in Pricing tier, ensure that **Standard** is selected, and then select **Next**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/d3d74ed6-9eec-47ff-a1f3-98ed6d7043f9" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-On the Add peering page, in This virtual network, in Peering link name, enter ***🆃 webVNET-to-appVNET***.
-
-In Remote virtual network, in Peering link name, enter ***🆃 appVNET-to-webVNET***, and then in Virtual network, select **appVNET**.
-
-Select **Add**, and then wait for the peering connection to be created.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/fc27650f-9247-49a3-ac51-64ef679bb683" height="50%" width="50%" alt="9"/><br />
+On the Access configuration page, select the **Azure Disk Encryption for volume encryption** check box.
 
 <br>
+
+Select **Review + create**, review the specifications for the key vault, and then select **Create**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+
+<br>
+
 <h2></h2>
 <br>
 
-<h3>➡️ Verify that the webVNET-to-appVNET peering connection status is Connected</h3>
 <br>
 
-On the webVNET resource menu, in Settings, select **Peerings**.
-
-On the Peerings page, in webVNET-to-appVNET, verify that the Peering status is **Connected** ✅
-
+On the Azure portal page header, in the global controls section, select the **Cloud Shell** icon.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/cf3a2150-bd07-4114-b14e-73d709c1f447" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+  
+On the Welcome to Azure Cloud Shell page, select **PowerShell**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
 
- <br>
+On the **Getting started** page, select **Mount storage account**, and then click on **Apply**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+On the **Mount storage account** page, select **I want to create a storage account**, and then click on **Next**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Now for the **Create storage account** step:
+- In Resource group, ensure that **corp-datalod42311660** is selected.
+- In Storage account name, enter ***🆃 cs42311660***.
+- In File share, enter ***🆃 cloudshell***.
+- Select **Create**, and then wait for the Cloud Shell session to initialize.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+
+<br>
+
 <h2></h2>
 <br>
 
-<h3>➡️ Verify that the appVNET-to-webVNET peering connection status is Connected</h3>
+### Step ❶
+
+Retrieve the properties of the ***KV42311660*** key vault in the ***corp-datalod42311660*** resource group by using the **Get-AzKeyVault** cmdlet, and then store the results in a local variable named ***$KeyVault***.
 <br>
 
-On the webVNET - Peerings page, in webVNET-to-appVNET, in Peer, select **appVNET** to display the appVNET virtual network page.
+<br>
 
+- In Azure Cloud Shell, run the following command to retrieve the properties of the key vault:
+
+```commandline
+$KeyVault = Get-AzKeyVault -VaultName KV42311660 -ResourceGroupName corp-datalod42311660
+```
+<br>
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/1342638a-bf12-444a-bf09-7895103fb32e" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+  
 <br>
 
-On the appVNET resource menu, in Settings, select **Peerings**.
+<h2></h2>
+<br>
 
+### Step ❷
+
+Enable Azure Disk Encryption for ***webVM1*** by using the **Set-AzVMDiskEncryptionExtension** cmdlet and the ***corp-datalod42311660*** resource group.
+<br>
+
+<br>
+
+- Run the following command to retrieve the properties of the key vault:
+
+```commandline
+Set-AzVMDiskEncryptionExtension -ResourceGroupName corp-datalod42311660 -VMName webVM1 -DiskEncryptionKeyVaultUrl $KeyVault.VaultUri -DiskEncryptionKeyVaultId $KeyVault.ResourceId
+```
+<br>
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/acf4fa7d-33c0-4f57-a5f1-3217d117028b" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-On the Peerings page, in appVNET-to-webVNET, verify that the Peering status is **Connected** ✅
-
+- If prompted to continue, enter ***Y***
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/60a8e0eb-b7ff-4b1d-a27a-bdd503f3d5a9" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-If the peering connection does not appear on the Peerings page, on the command bar, select **Refresh**.
+⚠️ The command will take approximately 2–3 minutes to complete.
 
 <br>
+
+<h2></h2>
 <br>
 
-<h2>Summary</h2>
+### Step ❸
 
-Congratulations, you have completed the **Configure Virtual Network Connectivity by using Peering** Lab.
+Verify that the encryption for ***webVM1*** succeeded by using the **Get-AzVmDiskEncryptionStatus** cmdlet and the ***corp-datalod42311660*** resource group.
+<br>
 
-You have accomplished the following:
+<br>
 
-- Created a **Virtual Network for a Web Server Tier** by using the **Azure Portal**.
+- Run the following command to verify that the encryption succeeded:
 
-- Created a **Virtual Network for an Application Server Tier** by using **Azure CLI commands in Azure Cloud Shell**.
+```commandline
+Get-AzVmDiskEncryptionStatus -VMName webVM1 -ResourceGroupName corp-datalod42311660
+```
+<br>
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
 
-- Configured **Peering Connections** between the **Virtual Networks**.
+The encryption for both the OS and data disks should be verified.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Close the **Cloud Shell** window.
+
+<br>
+
+<h2></h2>
+<br>
+
+### Step ❹
+
+In the Azure portal, we need to verify that the updated disk specifications use **Azure Disk Encryption** ✅
+<br>
+
+<br>
+
+- On the Azure portal home page, select **Virtual machines**, and then select **webVM1**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+- On the webVM1 resource menu, in Settings, select **Disks**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+- On the Disks page, verify that there is now an OS disk and a data disk that both use **SSE with PMK & ADE** encryption.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+<br>
+
+
+
 
 <br>
 <br>
