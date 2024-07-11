@@ -245,9 +245,19 @@ Then close the **Remote Desktop Connection** window.
 <br>
 <br>
 
-<h2>3️⃣ Configure Peering Connections between the Virtual Networks</h2>
+<h2>3️⃣ Enable Azure Disk Encryption</h2>
 <br>
- 
+
+
+On the Azure portal menu, select Create a resource to display the Azure Marketplace.
+In Search services and marketplace, search for and select Key Vault, and then select Create.The Create Key Vault page
+On the Create key vault blade, in Resource group, select corp-datalod42311660, in Key vault name, enter KV42311660, in Pricing tier, ensure that Standard is selected, and then select Next.
+On the Access configuration page, select the Azure Disk Encryption for volume encryption check box.The Azure Disk Encryption for volume encryption check box
+Select Review + create, review the specifications for the key vault, and then select Create.
+
+
+
+
 On the Azure portal home page, in the Search bar, search for and select webVNET to display the ***webVNET*** virtual network page.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
