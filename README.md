@@ -252,7 +252,7 @@ On the Azure portal menu, select **Create a resource** to display the Azure Mark
 
 <br>
 
-In Search services and marketplace, search for and select ***🆃 Key Vault***, and then select **Create**.
+In Search services and marketplace, search for and select ***Key Vault***, and then select **Create**.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
@@ -382,9 +382,6 @@ Verify that the encryption for ***webVM1*** succeeded by using the **Get-AzVmDis
 Get-AzVmDiskEncryptionStatus -VMName webVM1 -ResourceGroupName corp-datalod42311660
 ```
 <br>
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
-<br>
 
 The encryption for both the OS and data disks should be verified.
 <p align="center">
@@ -401,21 +398,19 @@ Close the **Cloud Shell** window.
 ### Step ❹
 
 In the Azure portal, we need to verify that the updated disk specifications use **Azure Disk Encryption** ✅
-<br>
 
 <br>
 
-- On the Azure portal home page, select **Virtual machines**, and then select **webVM1**.
+On the Azure portal home page, select **Virtual machines**, and then select **webVM1**.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
 
-- On the webVM1 resource menu, in Settings, select **Disks**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
+On the webVM1 resource menu, in Settings, select **Disks**.
+
 <br>
 
-- On the Disks page, verify that there is now an OS disk and a data disk that both use **SSE with PMK & ADE** encryption.
+On the Disks page, verify that there is now an OS disk and a data disk that both use **SSE with PMK & ADE** encryption.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/516d697e-5e68-4355-bc73-59c724b948ca" height="80%" width="80%" alt="9"/><br />
 <br>
