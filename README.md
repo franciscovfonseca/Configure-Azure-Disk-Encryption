@@ -15,9 +15,8 @@
 
 <br>
 
-You are a Security Engineer for an organization that needs you to enable **Azure Disk Encryption** on an **Azure Virtual Machine**.
+You are a Security Engineer for an organization that needs you to enable **Azure Disk Encryption** on a **Azure Virtual Machine**.
 
-<br>
 
 1. First, you will **Create a Virtual Machine**.
 
@@ -26,6 +25,13 @@ You are a Security Engineer for an organization that needs you to enable **Azure
 4. Finally, you will **Enable Azure Disk Encryption**.
 
 <br>
+
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/01f390c9-cd83-447f-bb40-6c76a64dfa06" height="70%" width="70%" alt="9"/><br />
+
+<br>
+<br>
+
 <br>
 
 <h2>1️⃣ Create an Azure Virtual Machine</h2>
@@ -96,7 +102,7 @@ On the webVM1 resource menu, in Settings, select **Disks**.
 On the Disks page, in OS disk, verify that there is one disk, and then in the Encryption column, verify that the value is set to **SSE with PMK**.
 <br>
 
-In Data disk, verify that there are no data disks.The current disk specifications in the Azure portal
+In Data disk, verify that there are no data disks.
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ebe999db-a36f-4046-b063-1f649e2b2aa7" height="100%" width="100%" alt="9"/><br />
 <br>
@@ -123,86 +129,118 @@ In Data disk, verify that there are no data disks.The current disk specification
 <br>
 <br>
 
-<h2>2️⃣ Create a Virtual Network by using Azure Cloud Shell</h2>
+<h2>2️⃣ Add a new Data Disk to the Azure Virtual Machine</h2>
 <br>
- 
-In the Azure Portal, in the global controls, select the **Cloud Shell** icon.
+
+On the webVM1 Disks page, in Data disks, select **Create and attach a new disk**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/83d5df37-6cdb-4da2-8fa9-99a4fdb61607" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/4e604b1f-4cde-48ba-824c-c70cc980bba1" height="100%" width="100%" alt="9"/><br />
 <br>
 
-In the Welcome to Azure Cloud Shell dialog box, select **Bash**.
+In Disk name, enter ***🆃 DataFiles***, in Storage type, select **Standard HDD**, in Size (GiB), enter ***🆃 128***, and then on the command bar, select **Apply**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/56b65cb6-9732-45a0-abbe-ab0bdd5557d0" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ae381971-f3b6-491c-88f3-b1df2df57bf0" height="100%" width="100%" alt="9"/><br />
 <br>
 
-In the Getting started window, select **Mount storage account**, in Storage account subscription, select the existing **Challenge Labs** option, and then select **Apply**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/598c5ba9-9345-4c4a-9c3f-602c8ed9c580" height="80%" width="80%" alt="9"/><br />
 <br>
 
-In the Mount storage account window, select **I want to create a storage account**, and then select **Next**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/03d7e688-f940-451a-873f-c601cb059b02" height="80%" width="80%" alt="9"/><br />
-<br>
-
-In the Create storage account window, in Resource group, select **corp-datalod42226775**.
-
-In Region, select **(US) East US**.
-
-In Storage account name, enter ***🆃 cs42226775***.
-
-In File share, enter ***🆃 cloudshell***, and then select **Create**.
-<p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/81b26701-7e3a-4e31-96d1-ac2481276ecc" height="80%" width="80%" alt="9"/><br />
-<br>
-
-The Cloud Shell should take approximately 1–2 minutes to initialize.
-
-
-✅ You will use this **Virtual Network** for the **Application Tier**.
-
-<br>
 <h2></h2>
 <br>
 
-In Azure Cloud Shell, run the following command to create a virtual network and subnet:
-
-```commandline
-az network vnet create --name appVNET --resource-group corp-datalod42226775 --address-prefix 10.20.0.0/16 --subnet-name app --subnet-prefix 10.20.0.0/25
-```
-<br>
-
-⚠️ Cloud Shell does not support the keyboard shortcut Ctrl+V for paste.
-
-- Instead, select the command prompt, and then use **Ctrl+Shift+V** to paste.
-
+On the webVM1 Overview page, on the command bar, select **Connect**, and then under Native RDP, select **Select**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/1633eed3-851a-4949-9c7e-f920217d3425" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/128ac032-90e0-45c7-a59c-bb49cd00a9fb" height="70%" width="70%" alt="9"/><br />
 <br>
 
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/eb66d335-b144-46bb-8adc-59ff15426181" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/b3071ef9-bb7b-4d71-a9b4-d8f9c183e227" height="70%" width="70%" alt="9"/><br />
 <br>
+
+On the Native RDP page, select **Download RDP File**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/57340571-9c9a-411e-bdea-871783b17bfb" height="60%" width="60%" alt="9"/><br />
+<br>
+
+Open the RDP file, and then in the Remote Desktop Connection window, select **Connect**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/761e25df-1f27-43ec-b126-8e332252198b" height="50%" width="50%" alt="9"/><br />
+<br>
+
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/ab490c8f-f5c1-4df4-b0b0-2dfaec759e4e" height="60%" width="60%" alt="9"/><br />
+<br>
+
+When prompted for credentials, in User Name, enter ***🆃 AzureAdmin***, in Password, enter ***🆃 Az!42311660!***, and then select **OK**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/e9becc7b-dd30-47ae-9d91-2b2b0dadd0bc" height="60%" width="60%" alt="9"/><br />
+<br>
+
+In the Remote Desktop Connection warning message box, select **Yes**, and then wait for the RDP session to initialize.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/672ee134-8abc-445e-946f-d9632f542bba" height="60%" width="60%" alt="9"/><br />
+<br>
+
+In the RDP session, if prompted to allow your PC to be discoverable by other PCs and devices on this network, select **No**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/147de1cd-9efc-4162-ac1a-50ad42d72bfe" height="40%" width="40%" alt="9"/><br />
+<br>
+
+Wait for Server Manager to load, and then minimize **Server Manager**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/60dac6f3-7f26-4624-bf0e-d6cc5e3cd233" height="100%" width="100%" alt="9"/><br />
+<br>
+
+<br>
+
 <h2></h2>
 <br>
 
-Run the following command to verify the presence of a virtual network and subnet:
-
-```commandline
-az network vnet show --name appVNET --resource-group corp-datalod42226775
-```
-<br>
+In the Remote Desktop Connection window, right-click **Start**, and then select **Disk Management**.
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/ce8116a3-778c-4113-abae-66448f272a19" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/dd444014-2e32-46f3-90fe-291888c93bb4" height="40%" width="40%" alt="9"/><br />
 <br>
-
-The following screenshot shows the virtual network name and subnet name property values in the command output:
+  
+In the Initialize Disk dialog box, review the default values, and then select **OK** to initialize the new disk.The Initialize Disk window
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Configure-Virtual-Network-Connectivity-by-Using-Peering/assets/172988970/dd402600-f67e-4a8b-8f94-c5d917f0d207" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/a4f89ba2-e018-467a-9869-a34b3f248e7e" height="80%" width="80%" alt="9"/><br />
 <br>
 
-Close the **Cloud Shell** window.
+In Disk Management, right-click the new, unallocated disk, and then select **New Simple Volume**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/52a607bb-4d8f-4435-8dfe-4aac7e0bf85b" height="80%" width="80%" alt="9"/><br />
+<br>
+
+In the New Simple Volume Wizard, select **Next** twice to advance to the Assign Drive Letter or Path page.
+<br>
+
+In Assign the following drive letter, ensure that F is selected, and then select **Next**.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/18157522-9e84-4f44-9a4f-ad5f04667a9f" height="70%" width="70%" alt="9"/><br />
+<br>
+
+In File System, ensure that **NTFS** is selected, and then in Volume label, enter ***🆃 DataFiles***,
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/f0a2a549-776c-4976-a895-c2acff20ee29" height="70%" width="70%" alt="9"/><br />
+<br>
+
+Select **Next**, and then select **Finish** to format the new disk.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/e3bf4f1a-80fe-4d21-b789-9f59e37d0a0e" height="70%" width="70%" alt="9"/><br />
+<br>
+
+Close the **Disk Management** window.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/e24ef5ed-3d56-49f7-8ee5-81a18775a5a8" height="70%" width="70%" alt="9"/><br />
+<br>
+
+Then close the **Remote Desktop Connection** window.
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Configure-Azure-Disk-Encryption/assets/172988970/d0f93c86-6eff-4da8-8f76-60956032a70a" height="100%" width="100%" alt="9"/><br />
+<br>
+
+
+<br>
+
 
 <br>
 <br>
